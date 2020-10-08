@@ -20,3 +20,8 @@
 **Reference**
 
 [1] Bharath Sudharsan, John G. Breslin, and Muhammad Intizar Ali. 2020. RCE-NN: A Five-Stage Pipeline to Execute Neural Networks (CNNs) on Resource-Constrained IoT Edge Devices. InProceedings of 10th International Conferenceon the Internet of Things, Malmö, Sweden, October 6–9, 2020 (IoT ’20), 8 pages.https://doi.org/10.1145/3410992.3411005
+
+** Contact**
+```
+For any clarification/further information please don't hesitate to contact me. Email: b.sudharsan1@nuigalway.ie
+```
