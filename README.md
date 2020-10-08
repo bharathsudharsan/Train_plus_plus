@@ -18,9 +18,9 @@
 **Tip:** Before using the implementation of our algorithms for onboard training, for the first time, we recommend users to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
 **Reference**
-```
+
 [1] Bharath Sudharsan, John G. Breslin, and Muhammad Intizar Ali. 2020. RCE-NN: A Five-Stage Pipeline to Execute Neural Networks (CNNs) on Resource-Constrained IoT Edge Devices. InProceedings of 10th International Conferenceon the Internet of Things, Malmö, Sweden, October 6–9, 2020 (IoT ’20), 8 pages.https://doi.org/10.1145/3410992.3411005
-```
+
 **Contact**
 
 ```
