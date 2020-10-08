@@ -11,9 +11,9 @@
 
 **Experiment:** Using Arduino IDE we uploaded our *Train++* algorithm on the follopwing 5 popular open-source boards [nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062), [STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html), [Generic ESP32](https://www.espressif.com/en/products/devkits), [ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505) and trained binary classifier using the above datasets. We followed exactly the same setup as from the state-of-the-art **Edge2Train framework**. Then when comparing both the results, we made the following observations. 
 
-1. Our method reduces the onboard binary classifier training time by $\approx$ 10 - 226 sec across the same MCUs. 
-2. Our models infer for the entire test set in lesser time than the \emph{Edge2Train} trained model's unit inference time. 
-3. The accuracy improved by 5.15 - 7.3\%  since our incremental training method enabled loading the full \emph{n-samples} of the high-dimensional datasets.
+1. Our method reduces the onboard binary classifier training time by 10 - 226 sec across the same MCUs. 
+2. Our models infer for the entire test set in lesser time than the Edge2Train trained model's unit inference time. 
+3. The accuracy improved by 5.15 - 7.3%  since our incremental training method enabled loading the full *n-samples* of the high-dimensional datasets.
 
 **Tip:** Before using the implementation of our algorithms for onboard training, for the first time, we recommend users to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
