@@ -23,6 +23,4 @@
 
 **Contact**
 
-```
 For any clarification/further information please don't hesitate to contact me. Email: b.sudharsan1@nuigalway.ie
-```
