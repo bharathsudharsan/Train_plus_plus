@@ -9,6 +9,14 @@
 3. [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): Here we train a binary classifier that can find the class names (malignant or benign) based on the input features.
 4. [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/): Here, we extracted data fields for digit 6, with positive and negative samples. Then using *Train++*, we trained a binary classifier on MCUs, that distinguishes digit 6 from other digits, based on the input features. 
 
-**Experiment:** We uploaded our *Train++* algorithm on 5 popular open-source boards such as [nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062), [STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html), [Generic ESP32](https://www.espressif.com/en/products/devkits), [ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505) and trained binary classifier using the above datasets. 
+**Experiment:** Using Arduino IDE we uploaded our *Train++* algorithm on the follopwing 5 popular open-source boards [nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062), [STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html), [Generic ESP32](https://www.espressif.com/en/products/devkits), [ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505) and trained binary classifier using the above datasets. We followed exactly the same setup as from the state-of-the-art **Edge2Train framework**. Then when comparing both the results, we made the following observations. 
+
+1. Our method reduces the onboard binary classifier training time by $\approx$ 10 - 226 sec across the same MCUs. 
+2. Our models infer for the entire test set in lesser time than the \emph{Edge2Train} trained model's unit inference time. 
+3. The accuracy improved by 5.15 - 7.3\%  since our incremental training method enabled loading the full \emph{n-samples} of the high-dimensional datasets.
 
 **Tip:** Before using the implementation of our algorithms for onboard training, for the first time, we recommend users to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
+
+**Reference**
+
+[1] Bharath Sudharsan, John G. Breslin, and Muhammad Intizar Ali. 2020. RCE-NN: A Five-Stage Pipeline to Execute Neural Networks (CNNs) on Resource-Constrained IoT Edge Devices. InProceedings of 10th International Conferenceon the Internet of Things, Malmö, Sweden, October 6–9, 2020 (IoT ’20), 8 pages.https://doi.org/10.1145/3410992.3411005
