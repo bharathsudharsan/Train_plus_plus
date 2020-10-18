@@ -120,10 +120,20 @@ void loop() {
         return;
 
     call_fn.setC(1);
-
+    
+    Serial.print("Starting to train using the entered train set size");
+    time_t start = millis();
     for (uint16_t i = 0; i < data_samples; i++)
         call_fn.classifier_fit(X[i], y[i]);
+    Serial.println();   
+    Serial.print("It took ");
+    temp1 = millis() - start;
+    Serial.print(temp1);
+    Serial.print("ms to train ");
+    Serial.println();
 
+    // Predict using onboard trained classifier
+    start = millis();
     for (uint16_t i = data_samples; i < DATASET_ROWS; i++) {
         int predicted_val = call_fn.classifier_predict(X[i]);
         int actual_val = y[i] > 0 ? 1 : -1;
@@ -138,7 +148,11 @@ void loop() {
         Serial.print(actual_val > 0 ? "+" : "");
         Serial.print(actual_val);
         Serial.println(" actual");    }
-
+    Serial.print("It took ");
+    temp = millis() - start;
+    Serial.print(temp);
+    Serial.print("ms for infering using the full test set");
+    Serial.println();
     Serial.print("Accuracy: ");
     Serial.print(round(100 * score.accuracy()));
     Serial.print("% out of ");
