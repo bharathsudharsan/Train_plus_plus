@@ -9,7 +9,9 @@
 3. [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): Here we train a binary classifier that can find the class names (malignant or benign) based on the input features.
 4. [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/): Here, we extracted data fields for digit 6, with positive and negative samples. Then using *Train++*, we trained a binary classifier on MCUs, that distinguishes digit 6 from other digits, based on the input features. 
 5.[Banknote Authentication](https://archive.ics.uci.edu/ml/datasets/banknote+authentication): Classifiers trained by *Train++* using this dataset should be able to identify forged banknote-like specimens from the test set.
+
 6.[Haberman's Survival](https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival): 
+
 7.[Titanic](https://www.kaggle.com/c/titanic/data):
 
 **Experiment:** Using Arduino IDE we uploaded our *Train++* algorithm on the follopwing 5 popular open-source boards [nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062), [STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html), [Generic ESP32](https://www.espressif.com/en/products/devkits), [ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505) and trained binary classifier using the above datasets. We followed exactly the same setup as from the state-of-the-art **[Edge2Train framework](https://dl.acm.org/doi/pdf/10.1145/3410992.3411014)** [1]. Then when comparing both the results, we made the following observations. 
