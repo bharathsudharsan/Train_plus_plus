@@ -24,6 +24,3 @@
 
 [1] Bharath Sudharsan, John G. Breslin, and Muhammad Intizar Ali. 2020. Edge2Train: A Framework to Train Machine Learning Models (SVMs) on Resource-Constrained IoT Edge Devices. In Proceedings of 10th International Conference on the Internet of Things, Malmö, Sweden, October 6–9, 2020 (IoT’20), 8 pages.
 
-**Contact**
-
-For any clarification/further information please don't hesitate to contact me. Email: b.sudharsan1@nuigalway.ie
