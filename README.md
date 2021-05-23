@@ -41,9 +41,16 @@ Using Train++, for datasets D1-D4, we train a binary classifier on MCUs 1-5. For
 We compare the evaluation results of Train++ trained models with [Edge2Train](https://github.com/bharathsudharsan/Edge2Train) trained models. During comparison, we use the same datasets, MCUs, and procedure as from Edge2Train. The difference is, we use Train++ instead of Edge2Train's classifier training algorithm. 
 
 ### Training and Inference Time on MCUs
+
+To explain the relationship between training time, train set size, and feature dimension, using Train++, we trained binary classifiers on all MCUs 1-5 by providing training sets of varying sizes. We illustrate the results only for MCUs 2 & 5 below Figure
+
 ![alt text](https://github.com/bharathsudharsan/Train_plus_plus/blob/master/setsize_vs_train_time_and_accuracy.png)
 
+In this figure, the gap in the y-axis is the difference in the training time between the selected datasets, and for a clearer view, we marked this gap in ms. For MCUs 2 & 5, we noticed that the training time grows almost linearly with the number of training samples for all the datasets. For the Iris dataset with 4-dimensional features, MCU2 only took 4 ms to train on 105 samples, whereas it took 83 ms to train on the Digits dataset with 64-dimensional features. MCU5 is the slowest since it only has a 48 MHz clock and does not have FPU support. Hence it took 12 ms to train on 105 samples of the Iris dataset (3x times slower than MCU2) and 304 ms to train on the Digits dataset (3.6x times slower than MCU2).
+
 ### ML Model Accuracy on MCUs
+
+The highest onboard classification accuracy is 97.33% for the Iris (D1), 82.08% for Heart Disease (D2), 85.0% for Breast Cancer (D3), and 98.0% for Digits dataset (D4). In the above Figure, we illustrate the training sample size vs accuracy (accuracy scale in the right side y-axis). When comparing the accuracy of Train++ trained models with Edge2Train trained models, for the same Iris dataset, the accuracy improved by 7.3% and by 5.15% for the Digits dataset. This improvement is because our training algorithm enabled incremental loading of the full dataset. Other algorithms like SVMs work in batch mode, requiring full training data to be available in the limited MCU memory, thus sets an upper bound on the train set size. Hence, as shown our models achieved overall improved accuracy compared to the Edge2Train models, which were trained with limited data (unable to load full dataset due to memory constraints).
 
 ### Energy Consumption on MCUs
 
