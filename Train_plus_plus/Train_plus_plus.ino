@@ -10,8 +10,8 @@
 //#include "Digits_binary.h"
 //#include "Breast_cancer.h"
 //#include "haberman_survival_train_test.h"
-#include "banknote_authentication_train_test.h"
-//#include "titanic_train_test.h"
+//#include "banknote_authentication_train_test.h"
+#include "titanic_train_test.h"
 
 // Function to evaluate the multi-class classifiers.
         class eval_fn {
