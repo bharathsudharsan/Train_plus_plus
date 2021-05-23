@@ -1,4 +1,4 @@
-# Train++ for Microcontrollers 
+# Train++ for Arduino Microcontrollers 
 
 Train++ is an incremental training algorithm that trains ML models locally at the device level (e.g., on MCUs and small CPUs) using the full *n-samples* of high-dimensional data. Train++ transforms even the most resource-constrained edge devices into intelligent devices that can locally build their own knowledge base *on-the-fly* using the live data, thus creating smart self-learning and autonomous problem-solving AI devices.
 
