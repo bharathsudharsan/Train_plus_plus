@@ -8,23 +8,23 @@ Train++ is an incremental training algorithm that trains ML models locally at th
 
 We converted all the listed datasets into MCU executable *.h* files and placed them inside the algorithm folder (Train_plus_plus). The datasets 1 to 7 are used for training binary classifiers on MCUs using Train++. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
 
-1. [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage"): Using Train++, we train a binary classifier to distinguish Iris Setosa from other flowers based on the input features.
-2. [Heart Disease](https://archive.ics.uci.edu/ml/datasets/heart+Disease): After training, based on the input features, the Train++ trained classifier should be able to identify the presence of heart disease in the patient.
-3. [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): Here we train a binary classifier that can find the class names (malignant or benign) based on the input features.
-4. [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/): Here, we extracted data fields for digit 6, with positive and negative samples. Then using Train++, we trained a binary classifier on MCUs, that distinguishes digit 6 from other digits, based on the input features.
-5. [Banknote Authentication](https://archive.ics.uci.edu/ml/datasets/banknote+authentication): Classifiers trained by Train++ using this dataset should be able to identify forged banknote-like specimens from the test set.
-6. [Haberman's Survival](https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival): The trained classifiers, based on the features from the test set, should be able to predict the survival status of patients who have undergone surgery. i.e., should classify whether the patient survived five years or longer, or the patient died within five years.
-7. [Titanic](https://www.kaggle.com/c/titanic/data): The classifiers trained on MCUs using this dataset, for each passenger in the test set, should predict whether or not they survived the sinking of the Titanic.
+D1: [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage"): (4 features, 3 classes, 150 samples) <br/>
+D2: [Heart Disease](https://archive.ics.uci.edu/ml/datasets/heart+Disease): : (13 features, 2 classes, 303 samples) <br/>
+D3: [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): (30 features, 2 classes, 569 samples) <br/>
+D4: [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/): (64 features, 10 classes, 1797 samples) <br/>
+D5: [Banknote Authentication](https://archive.ics.uci.edu/ml/datasets/banknote+authentication): (5 features, 2 classes, 1372 samples) <br/>
+D6: [Haberman's Survival](https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival): (3 features, 2 classes, 306 samples) <br/>
+D7: [Titanic](https://www.kaggle.com/c/titanic/data): (11 features, 2 classes,  1300 samples) <br/>
 
 ### MCU boards (MCU1 - MCU5)
 
 Using Arduino IDE we uploaded our Train++ algorithm and the datasets on the following popular open-source boards 
 
-1. [nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062): ARM Cortex-M4 @64MHz, 1MB Flash, 256KB SRAM
-2. [STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html): ARM Cortex-M0 @72MHz, 128KB Flash, 20KB SRAM
-3. [Adafruit HUZZAH32] (https://www.adafruit.com/product/3405): Xtensa LX6 @240MHz, 4MB Flash, 520KB SRAM
-4. [Generic ESP32](https://www.espressif.com/en/products/devkits): Xtensa LX6 @240MHz, 4MB Flash, 520KB SRAM
-5. [ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505): ARM Cortex-M0+ @48 MHz, 256kB Flash, 32KB SRAM 
+MCU1: [nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062): ARM Cortex-M4 @64MHz, 1MB Flash, 256KB SRAM <br/>
+MCU2: [STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html): ARM Cortex-M0 @72MHz, 128KB Flash, 20KB SRAM <br/>
+MCU3: [Adafruit HUZZAH32](https://www.adafruit.com/product/3405): Xtensa LX6 @240MHz, 4MB Flash, 520KB SRAM <br/>
+MCU4: [Generic ESP32](https://www.espressif.com/en/products/devkits): Xtensa LX6 @240MHz, 4MB Flash, 520KB SRAM <br/>
+MCU5: [ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505): ARM Cortex-M0+ @48 MHz, 256kB Flash, 32KB SRAM <br/>
 
 ## Train++ Algorithm Performance Evaluation
 
@@ -34,7 +34,9 @@ Here we perform multiple datasets and MCUs based extensive experimental evaluati
 2. Can Train++ load, train, and infer using high features and size datasets on limited memory MCU boards that have low hardware specification and no floating point unit (FPU), accelerated processing unit (APU), convolution operation accelerator (KPU) support?
 3. What is the impact on accuracy when training ML models on MCUs using Train++, and how much does the accuracy vary in comparison with models trained on high resource setups?
 
+### Procedure
 
+Using Train++, for datasets D1-D4, we train a binary classifier on MCUs 1-5. For the first dataset D1, all the classifiers trained on MCUs 1-5 (using Train++) should distinguish Iris Setosa from other flowers based on the input features. Similarly for D2, the MCU trained classifiers should be able to identify the presence of heart disease in the patient. Similarly, for D3, the classifiers should be able to predict the class names based on the input features from the test set. For D4, digit six should be recognized from other digits. 
 
-**Tip:** When first time using the the Train++ code for training on MCUs, we recommend to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
+**Tip:** When first time using the the Train++ code for training ML models on MCUs, we recommend to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
