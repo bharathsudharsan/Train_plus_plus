@@ -71,5 +71,5 @@ From the above Figure (y-axis in base-10 log scale), it is apparent that Train++
 
 For a given task that needs to be completed by using the same datasets on the same MCUs, Train++ achieved such significant energy consumption due to its high-performance characteristics (i.e., it trained and inferred at much higher speeds than other methods). Hence, when Train++ is used, MCUs can perform onboard model training and inference at the lowest power costs, thus enabling offline learning and model inference without affecting the IoT edge application routine and operating time of battery-powered devices
 
-**Tip:** When first time using the the Train++ code for training ML models on MCUs, we recommend to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
+**Tip:** When first time using the Train++ code for training ML models on MCUs, we recommend using better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
