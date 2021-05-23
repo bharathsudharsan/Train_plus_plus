@@ -41,10 +41,13 @@ Using Train++, for datasets D1-D4, we train a binary classifier on MCUs 1-5. For
 We compare the evaluation results of Train++ trained models with [Edge2Train](https://github.com/bharathsudharsan/Edge2Train) trained models. During comparison, we use the same datasets, MCUs, and procedure as from Edge2Train. The difference is, we use Train++ instead of Edge2Train's classifier training algorithm. 
 
 ### Training and Inference Time on MCUs
+![alt text](https://github.com/bharathsudharsan/Train_plus_plus/blob/master/setsize_vs_train_time_and_accuracy.png)
 
 ### ML Model Accuracy on MCUs
 
 ### Energy Consumption on MCUs
+![alt text](https://github.com/bharathsudharsan/Train_plus_plus/blob/master/energy_comparison_for_train_and_infer.png)
+
 
 **Tip:** When first time using the the Train++ code for training ML models on MCUs, we recommend to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
