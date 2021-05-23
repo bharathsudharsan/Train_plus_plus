@@ -2,11 +2,9 @@
 
 **Overview:** We provide *Train++* algorithm for all Arduino IDE supported MCUs. Train++ is our incremental training algorithm that can be used to train binary classifiers on MCUs using large volume, high dimensional, real-time data, thus producing self-learning IoT edge devices capable of learning to perform analytics for any target IoT use cases. 
 
-<<<<<<< HEAD
 **Datasets for onboard training:** We converted all the listed datasets into MCU executable *.h* files and placed them inside the algorithm folder (Train_plus_plus). The datasets 1, 2, 3 and 4 are used for training binary classifiers on MCUs using *Train++*. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
 =======
 **Datasets for onboard training:** We converted all the listed datasets into MCU executable *.h* files and placed them inside the algorithm folder. The datasets 1 to 7 are used for training binary classifiers on MCUs using *Train++*. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
->>>>>>> f1cfa20d6de787f8c13b7ebe7eb50cf3274b871c
 
 1. [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage"): Using *Train++*, we train a binary classifier to distinguish Iris Setosa from other flowers based on the input features.
 2. [Heart Disease](https://archive.ics.uci.edu/ml/datasets/heart+Disease): After training, based on the input features, the *Train++* trained classifier should be able to identify the presence of heart disease in the patient.
