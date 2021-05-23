@@ -1,8 +1,10 @@
 # Train++: A high-performance incremental binary classifier training algorithm for MCUs
 
-**Overview:** We provide *Train++* algorithm for all Arduino IDE supported MCUs. Train++ is our incremental training algorithm that can be used to train binary classifiers on MCUs using large volume, high dimensional, real-time data, thus producing self-learning IoT edge devices capable of learning to perform analytics for any target IoT use cases. 
+We provide *Train++* algorithm for all Arduino IDE supported MCUs. Train++ is our incremental training algorithm that can be used to train binary classifiers on MCUs using large volume, high dimensional, real-time data, thus producing self-learning IoT edge devices capable of learning to perform analytics for any target IoT use cases. 
 
-**Datasets for onboard training:** We converted all the listed datasets into MCU executable *.h* files and placed them inside the algorithm folder. The datasets 1 to 7 are used for training binary classifiers on MCUs using *Train++*. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
+## Datasets for onboard training
+
+We converted all the listed datasets into MCU executable *.h* files and placed them inside the algorithm folder. The datasets 1 to 7 are used for training binary classifiers on MCUs using *Train++*. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
 
 1. [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage"): Using *Train++*, we train a binary classifier to distinguish Iris Setosa from other flowers based on the input features.
 2. [Heart Disease](https://archive.ics.uci.edu/ml/datasets/heart+Disease): After training, based on the input features, the *Train++* trained classifier should be able to identify the presence of heart disease in the patient.
@@ -17,6 +19,8 @@
 1. Our method reduces the onboard binary classifier training time by 10 - 226 sec across the same MCUs. 
 2. Our models infer for the entire test set in lesser time than the Edge2Train trained model's unit inference time. 
 3. The accuracy improved by 5.15 - 7.3%  since our incremental training method enabled loading the full *n-samples* of the high-dimensional datasets.
+
+
 
 **Tip:** Before using the implementation of our algorithms for onboard training, for the first time, we recommend users to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
