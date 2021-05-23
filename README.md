@@ -34,9 +34,11 @@ Here we perform multiple datasets and MCUs based extensive experimental evaluati
 2. Can Train++ load, train, and infer using high features and size datasets on limited memory MCU boards that have low hardware specification and no floating point unit (FPU), accelerated processing unit (APU), convolution operation accelerator (KPU) support?
 3. What is the impact on accuracy when training ML models on MCUs using Train++, and how much does the accuracy vary in comparison with models trained on high resource setups?
 
-### Procedure
+### Experiment Procedure
 
 Using Train++, for datasets D1-D4, we train a binary classifier on MCUs 1-5. For the first dataset D1, all the classifiers trained on MCUs 1-5 (using Train++) should distinguish Iris Setosa from other flowers based on the input features. Similarly for D2, the MCU trained classifiers should be able to identify the presence of heart disease in the patient. Similarly, for D3, the classifiers should be able to predict the class names based on the input features from the test set. For D4, digit six should be recognized from other digits. 
+
+We compare the evaluation results of Train++ trained models with Edge2Train trained models. During comparison, we use the same datasets, MCUs, and procedure as from Edge2Train. The difference is, we use Train++ instead of Edge2Train's classifier training algorithm. 
 
 **Tip:** When first time using the the Train++ code for training ML models on MCUs, we recommend to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
