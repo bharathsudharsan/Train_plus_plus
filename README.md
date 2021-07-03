@@ -4,7 +4,7 @@ Train++ is an incremental training algorithm that trains ML models locally at th
 
 ## MCU Boards, Datasets for Train++ Evaluation
 
-### MCU boards (MCU1 - MCU5)
+### MCU Boards (MCU1 - MCU5)
 
 Using Arduino IDE we uploaded our Train++ algorithm and the datasets on the following popular open-source boards:
 
