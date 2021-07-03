@@ -8,23 +8,23 @@ Train++ is an incremental training algorithm that trains ML models locally at th
 
 Using Arduino IDE we uploaded our Train++ algorithm and the datasets on the following popular open-source boards:
 
-MCU1: [nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062): ARM Cortex-M4 @64MHz, 1MB Flash, 256KB SRAM <br/>
-MCU2: [STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html): ARM Cortex-M0 @72MHz, 128KB Flash, 20KB SRAM <br/>
-MCU3: [Adafruit HUZZAH32](https://www.adafruit.com/product/3405): Xtensa LX6 @240MHz, 4MB Flash, 520KB SRAM <br/>
-MCU4: [Generic ESP32](https://www.espressif.com/en/products/devkits): Xtensa LX6 @240MHz, 4MB Flash, 520KB SRAM <br/>
-MCU5: [ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505): ARM Cortex-M0+ @48 MHz, 256kB Flash, 32KB SRAM <br/>
+MCU1: [nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062): ARM Cortex-M4 @64MHz, 1MB Flash, 256KB SRAM. <br/>
+MCU2: [STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html): ARM Cortex-M0 @72MHz, 128KB Flash, 20KB SRAM. <br/>
+MCU3: [Adafruit HUZZAH32](https://www.adafruit.com/product/3405): Xtensa LX6 @240MHz, 4MB Flash, 520KB SRAM. <br/>
+MCU4: [Generic ESP32](https://www.espressif.com/en/products/devkits): Xtensa LX6 @240MHz, 4MB Flash, 520KB SRAM. <br/>
+MCU5: [ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505): ARM Cortex-M0+ @48 MHz, 256kB Flash, 32KB SRAM. <br/>
 
 ### Datasets (D1 - D7)
 
 We converted all the listed datasets into MCU executable *.h* files and placed them inside the algorithm folder (Train_plus_plus). The datasets 1 to 7 are used for training binary classifiers on MCUs using Train++. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
 
-D1: [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage"): (4 features, 3 classes, 150 samples) <br/>
-D2: [Heart Disease](https://archive.ics.uci.edu/ml/datasets/heart+Disease): (13 features, 2 classes, 303 samples) <br/>
-D3: [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): (30 features, 2 classes, 569 samples) <br/>
-D4: [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/): (64 features, 10 classes, 1797 samples) <br/>
-D5: [Banknote Authentication](https://archive.ics.uci.edu/ml/datasets/banknote+authentication): (5 features, 2 classes, 1372 samples) <br/>
-D6: [Haberman's Survival](https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival): (3 features, 2 classes, 306 samples) <br/>
-D7: [Titanic](https://www.kaggle.com/c/titanic/data): (11 features, 2 classes,  1300 samples) <br/>
+D1: [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage"): (4 features, 3 classes, 150 samples). <br/>
+D2: [Heart Disease](https://archive.ics.uci.edu/ml/datasets/heart+Disease): (13 features, 2 classes, 303 samples). <br/>
+D3: [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): (30 features, 2 classes, 569 samples). <br/>
+D4: [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/): (64 features, 10 classes, 1797 samples). <br/>
+D5: [Banknote Authentication](https://archive.ics.uci.edu/ml/datasets/banknote+authentication): (5 features, 2 classes, 1372 samples). <br/>
+D6: [Haberman's Survival](https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival): (3 features, 2 classes, 306 samples). <br/>
+D7: [Titanic](https://www.kaggle.com/c/titanic/data): (11 features, 2 classes,  1300 samples). <br/>
 
 
 ## Train++ Algorithm Performance Evaluation
