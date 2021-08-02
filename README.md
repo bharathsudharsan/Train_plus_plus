@@ -73,3 +73,20 @@ For a given task that needs to be completed by using the same datasets on the sa
 
 **Tip:** When first time using the Train++ code for training ML models on MCUs, we recommend using better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
+**If the code is useful, please consider citing Train++ and ML-MCU papers using the BibTex entry below.**
+
+```
+@inproceedings{sudharsan2021train,
+  title={Train++: An Incremental ML Model Training Algorithm to Create Self-Learning IoT Devices},
+  author={Sudharsan, Bharath and Breslin, John G and Ali, Muhammad Intizar},
+  booktitle={Proceedings of the 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)},
+  year={2021}
+  }
+  
+@article{sudharsan2021mlmcu,
+  title={ML-MCU: A Framework to Train ML Classifierson MCU-based IoT Edge Devices},
+  author={Sudharsan, Bharath and Breslin, John G and Ali, Muhammad Intizar},
+  journal={IEEE Internet of Things Journal},
+  year={2021}
+}
+```
