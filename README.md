@@ -78,7 +78,7 @@ For a given task that needs to be completed by using the same datasets on the sa
 ```
 @inproceedings{sudharsan2021train,
   title={Train++: An Incremental ML Model Training Algorithm to Create Self-Learning IoT Devices},
-  author={Sudharsan, Bharath and Breslin, John G and Ali, Muhammad Intizar},
+  author={Sudharsan, Bharath and Yadav, Piyush and Breslin, John G and Ali, Muhammad Intizar},
   booktitle={Proceedings of the 18th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC 2021)},
   year={2021}
   }
