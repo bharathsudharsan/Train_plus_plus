@@ -18,13 +18,13 @@ MCU5: [ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505): ARM C
 
 We converted all the listed datasets into MCU executable *.h* files and placed them inside the algorithm folder (Train_plus_plus). The datasets 1 to 7 are used for training binary classifiers on MCUs using Train++. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
 
-D1: [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage"): (4 features, 3 classes, 150 samples). <br/>
-D2: [Heart Disease](https://archive.ics.uci.edu/ml/datasets/heart+Disease): (13 features, 2 classes, 303 samples). <br/>
-D3: [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): (30 features, 2 classes, 569 samples). <br/>
-D4: [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/): (64 features, 10 classes, 1797 samples). <br/>
-D5: [Banknote Authentication](https://archive.ics.uci.edu/ml/datasets/banknote+authentication): (5 features, 2 classes, 1372 samples). <br/>
-D6: [Haberman's Survival](https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival): (3 features, 2 classes, 306 samples). <br/>
-D7: [Titanic](https://www.kaggle.com/c/titanic/data): (11 features, 2 classes,  1300 samples). <br/>
+D1: [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage") (4 features, 3 classes, 150 samples). <br/>
+D2: [Heart Disease](https://archive.ics.uci.edu/ml/datasets/heart+Disease) (13 features, 2 classes, 303 samples). <br/>
+D3: [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data) (30 features, 2 classes, 569 samples). <br/>
+D4: [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/) (64 features, 10 classes, 1797 samples). <br/>
+D5: [Banknote Authentication](https://archive.ics.uci.edu/ml/datasets/banknote+authentication) (5 features, 2 classes, 1372 samples). <br/>
+D6: [Haberman's Survival](https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival) (3 features, 2 classes, 306 samples). <br/>
+D7: [Titanic](https://www.kaggle.com/c/titanic/data) (11 features, 2 classes,  1300 samples). <br/>
 
 
 ## Train++ Algorithm Performance Evaluation
