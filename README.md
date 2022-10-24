@@ -2,6 +2,8 @@
 
 Train++ is an incremental training algorithm that trains ML models locally at the device level (e.g., on MCUs and small CPUs) using the full *n-samples* of high-dimensional data. Train++ transforms even the most resource-constrained edge devices into intelligent devices that can locally build their own knowledge base *on-the-fly* using the live data, thus creating smart self-learning and autonomous problem-solving AI devices.
 
+[Train++ paper](https://www.researchgate.net/profile/Bharath-Sudharsan/publication/356364901_Train_An_Incremental_ML_Model_Training_Algorithm_to_Create_Self-Learning_IoT_Devices/links/619d5ca2d7d1af224b1ff7b9/Train-An-Incremental-ML-Model-Training-Algorithm-to-Create-Self-Learning-IoT-Devices.pdf)
+
 ## MCU Boards, Datasets for Train++ Evaluation
 
 ### MCU Boards (MCU1 - MCU5)
